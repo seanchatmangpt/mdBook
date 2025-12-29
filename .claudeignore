@@ -1,0 +1,91 @@
+# .claudeignore - Files and directories to exclude from Claude Code context
+# Uses gitignore-style patterns
+
+# Build outputs
+/target/
+/book/
+**/book/
+
+# Dependencies
+/node_modules/
+**/node_modules/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+*.secret
+*.key
+*.pem
+secrets/
+private/
+
+# Git internals
+.git/
+
+# Large generated files
+*.lock
+Cargo.lock
+
+# Test artifacts
+/compare1/
+/compare2/
+*.snap.new
+
+# Coverage reports
+/coverage/
+*.lcov
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# Log files
+*.log
+logs/
+
+# Binary files (no useful context)
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# Images (unless you need to analyze them)
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+
+# Fonts
+*.woff
+*.woff2
+*.ttf
+*.otf
+*.eot
+
+# Documentation build outputs
+/guide/book/
+
+# Package manager artifacts
+package-lock.json
