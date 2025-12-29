@@ -22,3 +22,8 @@ tests/testsuite/*/*/book/
 node_modules
 package-lock.json
 package.json
+
+# Claude Code local files (personal, not shared)
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/*.local.*
